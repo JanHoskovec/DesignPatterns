@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace CatalogueVehicules
 {
-    public abstract class Automobile
+    public abstract class Automobile : Vehicule
     {
-        protected string modele;
-        protected string couleur;
-        protected int puissance;
+
         protected double espace;
 
-        public Automobile(string modele, string couleur, int puissance, double espace)
+        public Automobile(string modele, string couleur, int puissance, double espace) : base (modele, couleur, puissance)
         {
-            this.modele = modele;
-            this.couleur = couleur;
-            this.puissance = puissance;
             this.espace = espace;
         }
 
