@@ -45,7 +45,9 @@
     <Compile Include="Automobile.cs" />
     <Compile Include="AutomobileElectricite.cs" />
     <Compile Include="AutomobileEssence.cs" />
+    <Compile Include="AutomobileHybride.cs" />
     <Compile Include="Catalogue.cs" />
+    <Compile Include="FabriqueVehiculeHybride.cs" />
     <Compile Include="IFabriqueVehicule.cs" />
     <Compile Include="FabriqueVehiculeElectricite.cs" />
     <Compile Include="FabriqueVehiculeEssence.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="Scooter.cs" />
     <Compile Include="ScooterElectricite.cs" />
     <Compile Include="ScooterEssence.cs" />
+    <Compile Include="ScooterHybride.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
