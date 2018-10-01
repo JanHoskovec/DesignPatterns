@@ -10,16 +10,13 @@ namespace CommandeTVA
     {
         static void Main(string[] args)
         {
-            //Commande commande = new Commande() { Pays =  new France()};
-            Commande commande = new Commande();
-            Pays fr = new France();
-            commande.Pays = fr;
+            Commande commande = new Commande() { Pays = new France() };
+
             decimal prixHt = 1599.99M;
 
-            
+
             Console.WriteLine($"Prix hors taxe : {prixHt}");
             Console.WriteLine($"Prix TTC en France : {commande.CalculeMontantTtc(prixHt).ToString("N2")}");
-            Console.WriteLine($"Prix TTC en France : {commande.CalculeMontantTtc(prixHt)}");
             Console.WriteLine($"dont TVA : {commande.CalculeTva(prixHt).ToString("N2")}");
 
             commande.Pays = new Luxembourg();
