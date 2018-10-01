@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CatalogueVehicules
 {
-    public class ScooterElectricite :  Scooter
+    public class ScooterElectricite : Scooter
     {
         public ScooterElectricite(string modele, string couleur, int puissance) :
             base(modele, couleur, puissance) { }
