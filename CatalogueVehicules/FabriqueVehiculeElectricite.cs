@@ -8,14 +8,14 @@ namespace CatalogueVehicules
 {
     public class FabriqueVehiculeElectricite : IFabriqueVehicule
     {
-        public Automobile CreerAutomobile()
+        public Automobile CreerAutomobile(string modele, string couleur, int puissance, double espace)
         {
-            return new AutomobileElectricite();
+            return new AutomobileElectricite(modele, couleur, puissance, espace);
         }
 
-        public Scooter CreerScooter()
+        public Scooter CreerScooter(string modele, string couleur, int puissance)
         {
-            return new ScooterElectricite();
+            return new ScooterElectricite(modele, couleur, puissance);
         }
     }
 }
