@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandeTVA", "CommandeTVA\CommandeTVA.csproj", "{71C1393C-476A-4ECF-AE23-3A2BFED29325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogueVehicules", "CatalogueVehicules\CatalogueVehicules.csproj", "{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactory", "AbstractFactory", "{F16B756C-8E38-4D46-A7DF-13C62C500CF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{71C1393C-476A-4ECF-AE23-3A2BFED29325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71C1393C-476A-4ECF-AE23-3A2BFED29325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71C1393C-476A-4ECF-AE23-3A2BFED29325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFD4E1CF-3BCE-4024-A144-4C3C3C16B5E0} = {F16B756C-8E38-4D46-A7DF-13C62C500CF1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBDD71BC-6FB5-4513-92D8-FE4002BC2879}
