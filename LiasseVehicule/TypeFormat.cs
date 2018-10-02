@@ -1,5 +1,6 @@
 ﻿public enum TypeFormat
 {
     HTML,
-    PDF
+    PDF,
+    DOC
 }

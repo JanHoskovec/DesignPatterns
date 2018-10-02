@@ -11,11 +11,16 @@ namespace LiasseVehicule
         public Vendeur vendeur { get; }
         private ConstructeurLiasseVehiculeHtml cHtml = new ConstructeurLiasseVehiculeHtml();
         private ConstructeurLiasseVehiculePdf cPdf = new ConstructeurLiasseVehiculePdf();
+        private ConstructeurLiasseVehiculeDoc cDoc = new ConstructeurLiasseVehiculeDoc();
 
-        public ClientVehicule()
+        public ClientVehicule(TypeFormat type)
         {
-            Vendeur vendeur1 = new Vendeur(cHtml);
-            Vendeur vendeur2 = new Vendeur(cPdf);
+            if (type == TypeFormat.HTML)
+                vendeur = new Vendeur(cHtml);
+            else if (type == TypeFormat.PDF)
+                vendeur = new Vendeur(cPdf);
+            else if (type == TypeFormat.DOC)
+                vendeur = new Vendeur(cDoc);
         }
     }
 }
