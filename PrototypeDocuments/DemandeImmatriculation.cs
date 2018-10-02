@@ -11,8 +11,7 @@ namespace PrototypeDocuments
         
         public override void Afficher()
         {
-            Console.WriteLine("Voici une demande d'immatriculation.");
-            Console.WriteLine(informations);
+            Console.WriteLine("Voici une demande d'immatriculation : " + informations);
         }
 
         public override void Imprimer()

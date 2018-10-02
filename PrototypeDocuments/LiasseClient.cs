@@ -11,24 +11,24 @@ namespace PrototypeDocuments
         public void Creer(string informations)
         {
             Liasse model = LiasseVierge.Instance();
-            IList<Document> modelDocs = model.GetDocuments();
+            IList<Document> modelDocs = model.Documents;
             IList<Document> myDocs = new List<Document>();
             foreach (Document doc in modelDocs)
             {
                 myDocs.Add(doc.Dupliquer().Remplir(informations));
             }
-            base.SetDocuments(myDocs);
+            base.Documents = myDocs;
         }
 
         public void Afficher()
         {
-            foreach (Document doc in base.GetDocuments())
+            foreach (Document doc in base.Documents)
                 doc.Afficher();
         }
 
         public void Imprimer()
         {
-            foreach (Document doc in base.GetDocuments())
+            foreach (Document doc in base.Documents)
                 doc.Imprimer();
         }
     }

@@ -11,8 +11,7 @@ namespace PrototypeDocuments
 
         public override void Afficher()
         {
-            Console.WriteLine("Voici un bon de commande.");
-            Console.WriteLine(informations);
+            Console.WriteLine("Voici un bon de commande : " + informations);
         }
 
         public override void Imprimer()

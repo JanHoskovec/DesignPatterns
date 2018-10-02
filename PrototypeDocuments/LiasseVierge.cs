@@ -19,22 +19,23 @@ namespace PrototypeDocuments
         
         private LiasseVierge()
         {
+            base.Documents = new List<Document>();
             Ajouter(new BonDeCommande());
-            Ajouter(new CertificatCession());
             Ajouter(new DemandeImmatriculation());
+            Ajouter(new CertificatCession());
         }
         public void Ajouter(Document d)
         {
-            IList<Document> mesDocuments = base.GetDocuments();
+            IList<Document> mesDocuments = base.Documents;
             mesDocuments.Add(d);
-            base.SetDocuments(mesDocuments);
+            base.Documents = mesDocuments;
         }
 
         public void Retirer(Document d)
         {
-            IList<Document> mesDocuments = base.GetDocuments();
+            IList<Document> mesDocuments = base.Documents;
             mesDocuments.Remove(d);
-            base.SetDocuments(mesDocuments);
+            base.Documents = mesDocuments;
         }
         
     }

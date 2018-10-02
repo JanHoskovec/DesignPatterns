@@ -11,8 +11,7 @@ namespace PrototypeDocuments
        
         public override void Afficher()
         {
-            Console.WriteLine("Voici un certificat de cession.");
-            Console.WriteLine(informations);
+            Console.WriteLine("Voici un certificat de cession : " + informations);
         }
 
         public override void Imprimer()

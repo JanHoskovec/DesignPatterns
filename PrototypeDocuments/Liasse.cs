@@ -8,16 +8,7 @@ namespace PrototypeDocuments
 {
     public abstract class Liasse
     {
-        private IList<Document> documents = new List<Document>();
-
-        public IList<Document> GetDocuments()
-        {
-            return documents;
-        }
-
-        protected void SetDocuments(IList<Document> docs)
-        {
-            documents = docs;
-        }
+        public IList<Document> Documents { get; protected set; }
+        
     }
 }
