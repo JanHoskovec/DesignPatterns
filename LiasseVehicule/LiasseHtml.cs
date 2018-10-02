@@ -8,20 +8,18 @@ namespace LiasseVehicule
 {
     public class LiasseHtml : Liasse
     {
-        public class LiasseHtml : Liasse
+        public override void ajouteDocument(string document)
         {
-            public override void ajouteDocument(string document)
-            {
-                if (document.StartsWith("<HTML>"))
-                    contenu.Add(document);
-            }
+            if (document.StartsWith("<HTML>"))
+                contenu.Add(document);
+        }
 
-            public override void imprime()
-            {
-                Console.WriteLine("Liasse HTML");
-                foreach (string s in contenu)
-                    Console.WriteLine(s);
-            }
+        public override void imprime()
+        {
+            Console.WriteLine("Liasse HTML");
+            foreach (string s in contenu)
+                Console.WriteLine(s);
         }
     }
+
 }
