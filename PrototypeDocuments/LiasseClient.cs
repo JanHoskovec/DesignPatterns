@@ -10,7 +10,7 @@ namespace PrototypeDocuments
     {
         public void Creer(string informations)
         {
-            Liasse model = new LiasseVierge();
+            Liasse model = LiasseVierge.Instance();
             IList<Document> modelDocs = model.GetDocuments();
             IList<Document> myDocs = new List<Document>();
             foreach (Document doc in modelDocs)

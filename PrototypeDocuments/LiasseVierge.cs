@@ -8,13 +8,21 @@ namespace PrototypeDocuments
 {
     public class LiasseVierge : Liasse
     {
-        public LiasseVierge()
+        private static LiasseVierge instance = null;
+
+        public static LiasseVierge Instance()
+        {
+            if (instance == null)
+                return new LiasseVierge();
+            return instance;
+        }
+        
+        private LiasseVierge()
         {
             Ajouter(new BonDeCommande());
             Ajouter(new CertificatCession());
             Ajouter(new DemandeImmatriculation());
         }
-
         public void Ajouter(Document d)
         {
             IList<Document> mesDocuments = base.GetDocuments();
