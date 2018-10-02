@@ -9,14 +9,21 @@ namespace LiasseVehicule
 {
     public class ConstructeurLiasseVehiculeHtml : ConstructeurLiasseVehicule
     {
-        public override Liasse construitDemandeImmatriculation(Vehicule v)
+        public ConstructeurLiasseVehiculeHtml()
         {
-            return new LiasseHtml();
+            liasse = new LiasseHtml();
         }
 
-        public override Liasse construitBonDeCommande(Vehicule v)
+        public override void construitBonDeCommande(string nomClient)
         {
-            return new LiasseHtml();
+            string document = "<HTML>Bon de commande Client : " + nomClient + "</HTML>";
+            liasse.ajouteDocument(document);
+        }
+
+        public override void construitDemandeImmatriculation(string nomDemandeur)
+        {
+            string document = "<HTML>Demande d'immatriculation Demandeur : " + nomDemandeur + "</HTML>";
+            liasse.ajouteDocument(document);
         }
     }
 }

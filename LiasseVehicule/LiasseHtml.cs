@@ -8,14 +8,20 @@ namespace LiasseVehicule
 {
     public class LiasseHtml : Liasse
     {
-        public override void ajouteDocument()
+        public class LiasseHtml : Liasse
         {
-            throw new NotImplementedException();
-        }
+            public override void ajouteDocument(string document)
+            {
+                if (document.StartsWith("<HTML>"))
+                    contenu.Add(document);
+            }
 
-        public override void imprime()
-        {
-            throw new NotImplementedException();
+            public override void imprime()
+            {
+                Console.WriteLine("Liasse HTML");
+                foreach (string s in contenu)
+                    Console.WriteLine(s);
+            }
         }
     }
 }

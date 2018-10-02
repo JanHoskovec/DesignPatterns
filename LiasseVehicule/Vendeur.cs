@@ -8,17 +8,19 @@ namespace LiasseVehicule
 {
     public class Vendeur
     {
-        public ConstructeurLiasseVehicule construit(TypeFormat type)
+        protected ConstructeurLiasseVehicule constructeur;
+
+        public Vendeur(ConstructeurLiasseVehicule constructeur)
         {
-            switch (type)
-            {
-                case (TypeFormat.HTML):
-                    return new ConstructeurLiasseVehiculeHtml();
-                case (TypeFormat.PDF):
-                    return new ConstructeurLiasseVehiculePdf();
-                default:
-                    return null;
-            }
+            this.constructeur = constructeur;
+        }
+
+        public Liasse construit(string nomClient)
+        {
+            constructeur.construitBonDeCommande(nomClient);
+            constructeur.construitDemandeImmatriculation(nomClient);
+            Liasse liasse = constructeur.resultat();
+            return liasse;
         }
     }
 }

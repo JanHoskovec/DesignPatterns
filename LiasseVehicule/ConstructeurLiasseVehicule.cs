@@ -9,13 +9,15 @@ namespace LiasseVehicule
 {
     public abstract class ConstructeurLiasseVehicule
     {
-        public Liasse liasse { get; set; }
+        protected Liasse liasse;
 
-        public abstract Liasse construitBonDeCommande(Vehicule v);
-        public abstract Liasse construitDemandeImmatriculation(Vehicule v);
-        public void resultat()
+        public abstract void construitBonDeCommande(string nomClient);
+
+        public abstract void construitDemandeImmatriculation(string nomDemandeur);
+
+        public Liasse resultat()
         {
+            return liasse;
         }
-
     }
 }

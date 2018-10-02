@@ -8,7 +8,10 @@ namespace LiasseVehicule
 {
     public abstract class Liasse
     {
-        public abstract void ajouteDocument();
+        protected IList<string> contenu = new List<string>();
+
+        public abstract void ajouteDocument(string document);
         public abstract void imprime();
+
     }
 }
