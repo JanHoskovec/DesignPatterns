@@ -13,6 +13,9 @@ namespace PrototypeDocuments
             LiasseClient maLiasse = new LiasseClient();
             maLiasse.Creer("John Doe");
             maLiasse.Afficher();
+            LiasseClient maDeuxiemeLiasse = new LiasseClient();
+            maDeuxiemeLiasse.Creer("Jane Doe");
+            maDeuxiemeLiasse.Afficher();
             Console.ReadLine();
         }
 

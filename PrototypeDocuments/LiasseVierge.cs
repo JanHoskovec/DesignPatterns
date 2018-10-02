@@ -8,34 +8,27 @@ namespace PrototypeDocuments
 {
     public class LiasseVierge : Liasse
     {
-        private static LiasseVierge instance = null;
+        private static LiasseVierge _instance = null;
 
         public static LiasseVierge Instance()
         {
-            if (instance == null)
+            if (_instance == null)
                 return new LiasseVierge();
-            return instance;
+            return _instance;
         }
         
         private LiasseVierge()
         {
-            base.Documents = new List<Document>();
-            Ajouter(new BonDeCommande());
-            Ajouter(new DemandeImmatriculation());
-            Ajouter(new CertificatCession());
+            Documents = new List<Document>();
         }
         public void Ajouter(Document d)
         {
-            IList<Document> mesDocuments = base.Documents;
-            mesDocuments.Add(d);
-            base.Documents = mesDocuments;
+            Documents.Add(d);
         }
 
         public void Retirer(Document d)
         {
-            IList<Document> mesDocuments = base.Documents;
-            mesDocuments.Remove(d);
-            base.Documents = mesDocuments;
+            Documents.Remove(d);
         }
         
     }
