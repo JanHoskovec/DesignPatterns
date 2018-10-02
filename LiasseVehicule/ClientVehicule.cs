@@ -14,7 +14,8 @@ namespace LiasseVehicule
 
         public ClientVehicule()
         {
-            vendeur = new Vendeur();
+            Vendeur vendeur1 = new Vendeur(cHtml);
+            Vendeur vendeur2 = new Vendeur(cPdf);
         }
     }
 }

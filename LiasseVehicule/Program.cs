@@ -10,6 +10,11 @@ namespace LiasseVehicule
     {
         static void Main(string[] args)
         {
+            Vendeur vendeur = new Vendeur(new ConstructeurLiasseVehiculeHtml());
+            vendeur.construit("John Smith").imprime();
+            Vendeur vendeurPdf = new Vendeur(new ConstructeurLiasseVehiculePdf());
+            vendeurPdf.construit("Jane Black").imprime();
+            Console.ReadLine();
         }
     }
 }
