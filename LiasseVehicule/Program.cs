@@ -24,7 +24,7 @@ namespace LiasseVehicule
             {
                 valid = int.TryParse(Console.ReadLine(), out i);
                 client = new ClientVehicule((TypeFormat)i);
-                valid = client.vendeur != null;
+                valid = client.vendeur != null; //There should be a more elegant way
                 if(!valid)
                     Console.WriteLine("Saisie invalide. Veuillez réessayer.");
             }

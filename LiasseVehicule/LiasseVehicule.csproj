@@ -60,11 +60,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CatalogueVehicules\CatalogueVehicules.csproj">
-      <Project>{ffd4e1cf-3bce-4024-a144-4c3c3c16b5e0}</Project>
-      <Name>CatalogueVehicules</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
