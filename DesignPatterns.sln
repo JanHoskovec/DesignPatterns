@@ -35,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsability", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsability", "ChainOfResponsability\ChainOfResponsability.csproj", "{FEA71F3A-C1CF-4EBC-8FC4-676AD29AE08C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memento", "Memento", "{53731744-217D-428B-8DCB-2E7F07D05D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsIncompatibles", "OptionsIncompatibles\OptionsIncompatibles.csproj", "{86B082C9-828A-4C42-B361-AE6A242A2F9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{FEA71F3A-C1CF-4EBC-8FC4-676AD29AE08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA71F3A-C1CF-4EBC-8FC4-676AD29AE08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA71F3A-C1CF-4EBC-8FC4-676AD29AE08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B082C9-828A-4C42-B361-AE6A242A2F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B082C9-828A-4C42-B361-AE6A242A2F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B082C9-828A-4C42-B361-AE6A242A2F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B082C9-828A-4C42-B361-AE6A242A2F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,8 @@ Global
 		{D991F6AD-4672-4A0B-8369-63D6BA8B4628} = {69676AB4-A0E1-4F4E-B8F1-6462BBCE10F2}
 		{4609D2ED-AB6B-4462-B348-D06E28001935} = {342484D9-9EB0-4B6D-8C86-BA12F5003ABD}
 		{FEA71F3A-C1CF-4EBC-8FC4-676AD29AE08C} = {4609D2ED-AB6B-4462-B348-D06E28001935}
+		{53731744-217D-428B-8DCB-2E7F07D05D4B} = {342484D9-9EB0-4B6D-8C86-BA12F5003ABD}
+		{86B082C9-828A-4C42-B361-AE6A242A2F9A} = {53731744-217D-428B-8DCB-2E7F07D05D4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBDD71BC-6FB5-4513-92D8-FE4002BC2879}
