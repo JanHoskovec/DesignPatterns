@@ -13,9 +13,11 @@ namespace PrototypeDocuments
             LiasseVierge model = LiasseVierge.Instance();
             model.Ajouter(new BonDeCommande());
             model.Ajouter(new DemandeImmatriculation());
-            model.Ajouter(new CertificatCession());
+            CertificatCession c = new CertificatCession();
+            model.Ajouter(c);
             LiasseClient maLiasse = new LiasseClient("John Doe");
             maLiasse.Afficher();
+            model.Retirer(c);
             LiasseClient maDeuxiemeLiasse = new LiasseClient("Jane Doe");
             maDeuxiemeLiasse.Afficher();
             Console.ReadLine();
