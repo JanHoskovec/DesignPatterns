@@ -8,12 +8,10 @@ namespace PrototypeDocuments
 {
     public class LiasseClient : Liasse
     {
-        public void Creer(string informations)
+        public LiasseClient(string informations)
         {
             LiasseVierge model = LiasseVierge.Instance();
-            model.Ajouter(new BonDeCommande());
-            model.Ajouter(new DemandeImmatriculation());
-            model.Ajouter(new CertificatCession());
+
             IList<Document> modelDocs = model.Documents;
             IList<Document> myDocs = new List<Document>();
             foreach (Document doc in modelDocs)

@@ -10,11 +10,13 @@ namespace PrototypeDocuments
     {
         static void Main(string[] args)
         {
-            LiasseClient maLiasse = new LiasseClient();
-            maLiasse.Creer("John Doe");
+            LiasseVierge model = LiasseVierge.Instance();
+            model.Ajouter(new BonDeCommande());
+            model.Ajouter(new DemandeImmatriculation());
+            model.Ajouter(new CertificatCession());
+            LiasseClient maLiasse = new LiasseClient("John Doe");
             maLiasse.Afficher();
-            LiasseClient maDeuxiemeLiasse = new LiasseClient();
-            maDeuxiemeLiasse.Creer("Jane Doe");
+            LiasseClient maDeuxiemeLiasse = new LiasseClient("Jane Doe");
             maDeuxiemeLiasse.Afficher();
             Console.ReadLine();
         }
